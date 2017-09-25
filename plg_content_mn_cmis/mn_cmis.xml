@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.5" type="plugin" group="content" method="upgrade">
+	<name>Content - Joomla CMIS Connector</name>
+	<author>Martin Nedved</author>
+	<creationDate>April 2016</creationDate>
+	<copyright>Copyright (C) 2013 Martin Nedved. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<authorEmail>martin.nedved@gmail.com</authorEmail>
+	<authorUrl>www.marned.cz</authorUrl>
+	<version>2.0.0</version>
+	<description>With this plugin, you can embed CMIS files, {documents nodeRef=XXX tag="tag"}, where "nodeRef" is the identification for the document or folder nodeRef (objectId).</description>
+	<files>
+		<filename plugin="mn_cmis">mn_cmis.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+		  <fieldset name="caching">
+			<field name="cache"  type="text" default="1" label="Cache" description="Povolit cache" />
+			<field name="cache_lifetime"  type="text" default="86400" label="Cache lifetime" description="Doba uložení cache" />
+			<field name="plugin_code"  type="text" default="documents" label="Short kód pluginu" description="Short kód pluginu" />
+			<field name="type_code"  type="text" default="type" label="Typ nodeRef soubor/slozka reps. strom" description="Typ nodeRef soubor/slozka reps. strom" />
+			<field name="folder_code"  type="text" default="folder" label="Kód pro složku" description="Kód pro složku" />
+			<field name="tree_code"  type="text" default="tree" label="Kód pro strom" description="Kód pro strom" />
+			<field name="template_code"  type="text" default="template" label="Kód pro šablonu" description="Kód pro šablonu" />
+			<field name="order_code"  type="text" default="order" label="Kód pro řazení" description="Kód pro řazení" />
+			<field name="order_asc_code"  type="text" default="asc" label="Kód pro vzestupné řazení" description="Kód pro vzestupné řazení" />
+			<field name="order_desc_code"  type="text" default="desc" label="Kód pro sestupné řazení" description="Kód pro sestupné řazení" />
+		  </fieldset> 
+				<!-- 
+				<fieldset name="basic">
+						<field name="search_limit" type="text"
+								default="50"
+								description="JFIELD_PLG_SEARCH_SEARCHLIMIT_DESC"
+								label="JFIELD_PLG_SEARCH_SEARCHLIMIT_LABEL"
+								size="5"
+						/>
+
+						<field name="search_content" type="radio"
+								default="0"
+								description="JFIELD_PLG_SEARCH_ALL_DESC"
+								label="JFIELD_PLG_SEARCH_ALL_LABEL"
+						>
+								<option value="0">JOFF</option>
+								<option value="1">JON</option>
+						</field>
+
+						<field name="search_archived" type="radio"
+								default="0"
+								description="JFIELD_PLG_SEARCH_ARCHIVED_DESC"
+								label="JFIELD_PLG_SEARCH_ARCHIVED_LABEL"
+						>
+								<option value="0">JOFF</option>
+								<option value="1">JON</option>
+						</field>
+				</fieldset>
+				-->
+		</fields>
+	</config>
+</extension>
