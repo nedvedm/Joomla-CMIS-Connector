@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.5" type="plugin" group="system" method="upgrade">
+        <name>System - MN Common libraries</name>
+		<author>Martin Nedved</author>
+		<creationDate>April 2016</creationDate>
+		<copyright>Copyright (C) 2013 Martin Nedved. All rights reserved.</copyright>
+		<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+		<authorEmail>martin.nedved@gmail.com</authorEmail>
+		<authorUrl>www.marned.cz</authorUrl>
+		<version>2.0.0</version>
+        <description>Common JS and PHP libraries for MN extensions.</description>
+        <files>
+                <filename plugin="mn_common">mn_common.php</filename>
+                <filename>index.html</filename>
+        </files>
+		<!-- 
+        <languages>
+                <language tag="en-GB">en-GB.plg_search_categories.ini</language>
+                <language tag="en-GB">en-GB.plg_search_categories.sys.ini</language>
+        </languages>
+		-->
+		
+        <config>
+                <fields name="params">
+ 						<!-- 
+                        <fieldset name="basic">
+                                <field name="search_limit" type="text"
+                                        default="50"
+                                        description="JFIELD_PLG_SEARCH_SEARCHLIMIT_DESC"
+                                        label="JFIELD_PLG_SEARCH_SEARCHLIMIT_LABEL"
+                                        size="5"
+                                />
+ 
+                                <field name="search_content" type="radio"
+                                        default="0"
+                                        description="JFIELD_PLG_SEARCH_ALL_DESC"
+                                        label="JFIELD_PLG_SEARCH_ALL_LABEL"
+                                >
+                                        <option value="0">JOFF</option>
+                                        <option value="1">JON</option>
+                                </field>
+ 
+                                <field name="search_archived" type="radio"
+                                        default="0"
+                                        description="JFIELD_PLG_SEARCH_ARCHIVED_DESC"
+                                        label="JFIELD_PLG_SEARCH_ARCHIVED_LABEL"
+                                >
+                                        <option value="0">JOFF</option>
+                                        <option value="1">JON</option>
+                                </field>
+                        </fieldset>
+ 						-->
+                </fields>
+        </config>
+		-->
+</extension>
