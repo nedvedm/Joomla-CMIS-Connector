@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		name="caching"
+		label="COM_MN_CMIS_CONFIG_COMPONENT_GLOBAL_SETTINGS_LABEL"
+		description="COM_MN_CMIS_CONFIG_COMPONENT_GLOBAL_SETTINGS_DESC"
+	>
+		<field name="cache_query" type="list" default="1"
+			label="COM_MN_CMIS_FIELD_CONFIG_CACHE_QUERY"
+			description="COM_MN_CMIS_FIELD_CONFIG_CACHE_QUERY_DESC">
+			<option value="2">JGLOBAL_USE_GLOBAL</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="cache_query_lifetime"  type="text" default="86400" label="COM_MN_CMIS_FIELD_CONFIG_CACHE_QUERY_LIFETIME" description="COM_MN_CMIS_FIELD_CONFIG_CACHE_QUERY_LIFETIME_DESC" />
+		<field name="cache_render" type="list" default="1"
+			label="COM_MN_CMIS_FIELD_CONFIG_CACHE_RENDER"
+			description="COM_MN_CMIS_FIELD_CONFIG_CACHE_RENDER_DESC">
+			<option value="2">JGLOBAL_USE_GLOBAL</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="cache_render_lifetime"  type="text" default="86400" label="COM_MN_CMIS_FIELD_CONFIG_CACHE_RENDER_LIFETIME" description="COM_MN_CMIS_FIELD_CONFIG_CACHE_RENDER_LIFETIME_DESC" />
+	</fieldset>
+	<fieldset
+		name="cmis"
+		label="COM_MN_CMIS_CONFIG_COMPONENT_CMIS_SETTINGS_LABEL"
+		description="COM_MN_CMIS_CONFIG_COMPONENT_CMIS_SETTINGS_DESC"
+	>
+        <field name="alfresco_url"  type="text" default="http://dms.company.com" label="COM_MN_CMIS_FIELD_CONFIG_ALFRESCO_URL" description="COM_MN_CMIS_FIELD_CONFIG_ALFRESCO_URL_DESC" />
+		
+		<field name="alfresco_ssl_site" type="radio" class="btn-group" default="0"
+			label="COM_MN_CMIS_FIELD_CONFIG_SSL_SITE"
+			description="COM_MN_CMIS_FIELD_CONFIG_SSL_SITE_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="alfresco_ssl_admin" type="radio" class="btn-group" default="1"
+			label="COM_MN_CMIS_FIELD_CONFIG_SSL_ADMIN"
+			description="COM_MN_CMIS_FIELD_CONFIG_SSL_ADMIN_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field name="alfresco_username"  type="text" default="" label="COM_MN_CMIS_FIELD_CONFIG_ALFRESCO_USERNAME" description="COM_MN_CMIS_FIELD_CONFIG_ALFRESCO_USERNAME_DESC" />
+		<field name="alfresco_password"  type="text" default="" label="COM_MN_CMIS_FIELD_CONFIG_ALFRESCO_PASSWORD" description="COM_MN_CMIS_FIELD_CONFIG_ALFRESCO_PASSWORD_DESC" />
+		
+		<field name="debug" type="radio" class="btn-group" default="0"
+			label="COM_MN_CMIS_FIELD_CONFIG_DEBUG"
+			description="COM_MN_CMIS_FIELD_CONFIG_DEBUG_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+	</fieldset>
+</config>

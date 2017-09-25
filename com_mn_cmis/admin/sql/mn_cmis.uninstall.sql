@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS `#__mn_cmis_stat`;

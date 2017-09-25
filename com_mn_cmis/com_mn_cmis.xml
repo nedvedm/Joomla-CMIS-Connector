@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.5" method="upgrade">
+    <name>COM_MN_CMIS</name>
+	<author>Martin Nedved</author>
+	<creationDate>April 2016</creationDate>
+	<copyright>Copyright (C) 2013 Martin Nedved. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<authorEmail>martin.nedved@gmail.com</authorEmail>
+	<authorUrl>www.marned.cz</authorUrl>
+	<version>2.0.0</version>
+	<description>COM_MN_CMIS_DESCRIPTION</description> 
+    <files folder="site">
+    	<folder>views</folder>
+		<folder>classes</folder>
+		<filename>index.html</filename>
+		<filename>mn_cmis.php</filename>
+		<filename>controller.php</filename> 
+	</files>
+	
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB/en-GB.com_mn_cmis.ini</language>
+		<language tag="cs-CZ">cs-CZ/cs-CZ.com_mn_cmis.ini</language>
+	</languages>
+	<administration>
+				
+		<menu link='index.php?option=com_mn_cmis'>COM_MN_CMIS</menu>
+			<submenu>
+				<menu link="option=com_config&amp;view=component&amp;component=com_mn_cmis">COM_MN_CMIS_SETTINGS</menu>
+				<menu view="filelist">COM_MN_CMIS_FILELIST</menu>
+			</submenu>
+			
+		<files folder="admin">
+			<folder>assets</folder>
+			<folder>images</folder>
+			<folder>views</folder>
+			<folder>helpers</folder>
+			<folder>sql</folder>
+			<folder>models</folder>
+			<folder>controllers</folder>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>mn_cmis.php</filename>
+		</files>
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_mn_cmis.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_mn_cmis.sys.ini</language>
+			<language tag="cs-CZ">cs-CZ/cs-CZ.com_mn_cmis.ini</language>
+			<language tag="cs-CZ">cs-CZ/cs-CZ.com_mn_cmis.sys.ini</language>
+		</languages>
+		
+	</administration>
+	
+	<media destination="com_mn_cmis" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+	</media>
+	
+	<install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/mn_cmis.install.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/mn_cmis.uninstall.sql</file>
+        </sql>
+    </uninstall>
+</extension>

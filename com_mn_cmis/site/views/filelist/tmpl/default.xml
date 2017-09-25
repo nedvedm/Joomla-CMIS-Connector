@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+        <layout title="COM_MN_CMIS_VIEW_FILE_LIST_TITLE">
+                <message>
+					<![CDATA[COM_MN_CMIS_VIEW_FILE_LIST_DESC]]>
+				</message>
+        </layout>
+		<state>
+                <name>COM_MN_CMIS_VIEW_FILE_LIST_TITLE</name>
+                <description>COM_MN_CMIS_VIEW_FILE_LIST_DESC</description>
+                <url addpath="/administrator/components/com_mn_cmis/elements">
+					<param name="nodeRef" type="text" default="" label="NodeRef"
+					description="Zadejte noderef včetně textu nodeRef (Pokud nebude vyplněno bude hledáno dle tagu, nebo textu pro hledání." size="90" />
+					<param name="type" type="list" default="folder"
+						label="Vyberte typ zobrazení"
+						description="Vyberte styl zobrazení">
+						<option value="file">Soubor</option>
+						<option value="folder">Složka</option>
+						<option value="tree">Strom</option>
+					</param>
+					<param name="tpl" type="list" default="docs"
+						label="Vyberte šablonu zobrazení"
+						description="Vyberte výchozí šablonu zobrazení">
+						<option value="doclib">Dokumenty</option>
+						<option value="thumbnail">Obrázky</option>
+					</param>
+					<param name="tag" type="text" default="" label="Tag"
+					description="Zadejte tag pro filtrování dokumentů" size="90" />
+					<param name="q" type="text" default="" label="Hledat v názvu nebo textu"
+					description="Zadejte text pro filtrování dokumentů" size="90" />
+				</url>
+				<params>
+					     
+                </params>
+                <advanced>
+                </advanced>
+        </state>
+        <fields name="request">
+            <fieldset name="request">
+      						<field name="nodeRef" type="text" default="" size="90"
+                      		label="COM_MN_CMIS_FIELD_NODEREF_LABEL"
+                      		description="COM_MN_CMIS_FIELD_NODEREF_DESC" />
+      							
+                              <field
+                                      name="type"
+                                      type="list"
+                                      label="COM_MN_CMIS_FIELD_STYLE_LABEL"
+                                      description="COM_MN_CMIS_FIELD_STYLE_DESC"
+                                      default="folder"
+                              >
+      								<option value="file">COM_MN_CMIS_FILE</option>
+                                      <option value="folder">COM_MN_CMIS_FOLDER</option>
+                                      <option value="tree">COM_MN_CMIS_TREE</option>
+      						</field>
+      						<field
+                                      name="tpl"
+                                      type="list"
+                                      label="COM_MN_CMIS_FIELD_TYPE_LABEL"
+                                      description="COM_MN_CMIS_FIELD_TYPE_DESC"
+                                      default="doclib"
+                              >
+                                      <option value="doclib">COM_MN_CMIS_DOCLIB</option>
+                                      <option value="thumbnail">COM_MN_CMIS_THUMBNAIL</option>
+                              </field>
+                  <field name="search_form" type="checkbox" label="COM_MN_CMIS_FIELD_SEARCH_FORM_LABEL" description="COM_MN_CMIS_FIELD_SEARCH_FORM_DESC" value="1" default="0" />
+      						
+      						
+      						<field name="tag" type="text" default="" size="90"
+                      		label="COM_MN_CMIS_FIELD_TAG_LABEL"
+                      		description="COM_MN_CMIS_FIELD_TAG_DESC" />
+      						
+      						<field name="g" type="text" default="" size="90"
+                      		label="COM_MN_CMIS_FIELD_Q_LABEL"
+                      		description="COM_MN_CMIS_FIELD_Q_DESC" />
+                   <field name="text_before" label ="Text před" type="editor" width="300" />        
+              </fieldset>
+        </fields>
+</metadata>
