@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.5" type="plugin" group="editors-xtd" method="upgrade">
+	<name>Editors-XTD - Joomla CMIS Connector</name>
+	<author>Martin Nedved</author>
+	<creationDate>April 2016</creationDate>
+	<copyright>Copyright (C) 2013 Martin Nedved. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<authorEmail>martin.nedved@gmail.com</authorEmail>
+	<authorUrl>www.marned.cz</authorUrl>
+	<version>2.0.0</version>
+	<description>With this plugin, you can embed CMIS files, {documents nodeRef=XXX tag="tag"}, where "nodeRef" is the identification for the document or folder nodeRef (objectId).</description>
+	<files>
+		<filename plugin="mn_cmis">mn_cmis.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_editors-xtd_mn_cmis.ini</language>
+		<language tag="cs-CZ">cs-CZ/cs-CZ.plg_editors-xtd_mn_cmis.ini</language>
+	</languages>
+</extension>
